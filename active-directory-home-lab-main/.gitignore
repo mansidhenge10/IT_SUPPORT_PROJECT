@@ -1,0 +1,47 @@
+# ===========================================================================
+#  .gitignore — Active Directory Home Lab
+#  Goal: keep documentation (.md), screenshots (.png), scripts (.ps1) and
+#  newusers.csv tracked, while keeping secrets and large VM artifacts OUT.
+# ===========================================================================
+
+# --- Secrets / credentials -------------------------------------------------
+LabPasswords.txt
+# Broad guard: ANY .txt may hold passwords, DSRM keys, or scratch notes.
+# (This also excludes the harmless Story.txt / re-enable reminder notes —
+#  move them to .md if you want them tracked.)
+*.txt
+
+# Common credential / key file types
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+secrets.*
+*.secret
+
+# --- Logs ------------------------------------------------------------------
+*.log
+
+# --- OS cruft --------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- VM images / large binary artifacts ------------------------------------
+*.vdi
+*.vhd
+*.vhdx
+*.iso
+*.ova
+*.ovf
+*.vmdk
+*.nvram
+
+# ===========================================================================
+#  Intentionally TRACKED (do not ignore):
+#    *.md   — stage write-ups / guides
+#    *.png  — screenshots
+#    *.ps1  — lab scripts
+#    scripts/newusers.csv — sample user input (no secrets)
+# ===========================================================================

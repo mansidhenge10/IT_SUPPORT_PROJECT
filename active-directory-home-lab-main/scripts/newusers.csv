@@ -1,0 +1,4 @@
+FirstName,LastName,SamAccountName,Department,OU
+Mark,Lopez,mark.lopez,Sales,"OU=Sales,OU=Users,OU=CORP,DC=corp,DC=lab"
+Amy,Chen,amy.chen,HR,"OU=HR,OU=Users,OU=CORP,DC=corp,DC=lab"
+Raj,Patel,raj.patel,IT,"OU=IT,OU=Users,OU=CORP,DC=corp,DC=lab"
